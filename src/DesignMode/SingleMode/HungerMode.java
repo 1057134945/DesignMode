@@ -1,4 +1,4 @@
-package SingleMode;
+package DesignMode.SingleMode;
 
 /**
  * 饿汉模式(线程安全)

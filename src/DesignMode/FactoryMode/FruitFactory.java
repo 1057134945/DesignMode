@@ -1,4 +1,4 @@
-package FactoryMode;
+package DesignMode.FactoryMode;
 
 import java.io.IOException;
 import java.util.Map;

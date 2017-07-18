@@ -1,4 +1,4 @@
-package FactoryMode;
+package DesignMode.FactoryMode;
 
 /**
  * 水果接口

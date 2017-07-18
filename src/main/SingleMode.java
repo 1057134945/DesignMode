@@ -1,7 +1,7 @@
 package main;
 
-import SingleMode.HungerMode;
-import SingleMode.LazyMode;
+import DesignMode.SingleMode.HungerMode;
+import DesignMode.SingleMode.LazyMode;
 
 /**  
  * 单例模式

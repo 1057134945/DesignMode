@@ -1,7 +1,7 @@
 package main;
 
-import FactoryMode.Fruit;
-import FactoryMode.FruitFactory;
+import DesignMode.FactoryMode.Fruit;
+import DesignMode.FactoryMode.FruitFactory;
 
 /**
  * 工厂模式

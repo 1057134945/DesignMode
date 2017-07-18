@@ -1,6 +1,6 @@
-package FactoryMode.fruit;
+package DesignMode.FactoryMode.fruit;
 
-import FactoryMode.Fruit;
+import DesignMode.FactoryMode.Fruit;
 
 /**
  * 香蕉
