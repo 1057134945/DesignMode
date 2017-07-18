@@ -1,7 +1,7 @@
 package SingleMode;
 
 /**
- * 设计模式->单例模式->饿汉模式(线程安全)
+ * 饿汉模式(线程安全)
  */
 public class HungerMode {
 
