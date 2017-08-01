@@ -3,16 +3,11 @@ package DesignMode.FactoryMode;
 /**
  * 水果接口
  */
-public class Fruit {
+public abstract class Fruit {
 
     private String fruitName;
 
-    public Fruit() {
-        this.fruitName = "水果";
-    }
-
-    public void eat() {
-    }
+    public abstract void eat();
 
     public String getFruitName() {
         return fruitName;

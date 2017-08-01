@@ -11,10 +11,23 @@ import java.util.Properties;
  * Properties资源文件读取工具
  */
 public class PropertiesReader {
-    public Map<String, String> getProperties(String propsName) throws IOException {
+
+    private static Map<String, String> instance;
+
+    private PropertiesReader() {
+    }
+
+    public static String getInstance(String name) throws IOException {
+        if (instance == null) {
+            instance = new PropertiesReader().getProperties();
+        }
+        return instance.get(name);
+    }
+
+    private Map<String, String> getProperties() throws IOException {
         Properties props = new Properties();
         Map<String, String> map = new HashMap<String, String>();
-        InputStream in = getClass().getResourceAsStream(propsName + ".properties");
+        InputStream in = PropertiesReader.class.getClassLoader().getResourceAsStream("Type.properties");
         props.load(in);
         Enumeration<?> en = props.propertyNames();
         while (en.hasMoreElements()) {
@@ -23,6 +36,7 @@ public class PropertiesReader {
             map.put(key, property);
             System.out.println(key + "<====>" + property);
         }
+        System.out.println("====================================================================");
         return map;
     }
 }

@@ -13,7 +13,10 @@ public class Apple extends Fruit {
 
     @Override
     public void eat() {
-        System.out.println("吃" + this.getFruitName());
+        System.out.println("-" + this.getFruitName() + "-");
+        System.out.println("洗");
+        System.out.println("削皮");
+        System.out.println("吃");
+        System.out.println();
     }
-
 }

@@ -13,7 +13,9 @@ public class Banana extends Fruit {
 
     @Override
     public void eat() {
-        System.out.println("吃" + this.getFruitName());
+        System.out.println("-" + this.getFruitName() + "-");
+        System.out.println("拨皮");
+        System.out.println("吃");
+        System.out.println();
     }
-
 }
