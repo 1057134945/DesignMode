@@ -11,9 +11,9 @@ public class AdapterMode {
     public static void main(String[] args) {
         // 类适配器
         Target classAdapterTarget = new ClassAdapter();
-        classAdapterTarget.request();
+        classAdapterTarget.request("");
         // 对象适配器
         Target dataAdapterTarget = new DateAdapter();
-        dataAdapterTarget.request();
+        dataAdapterTarget.request("");
     }
 }

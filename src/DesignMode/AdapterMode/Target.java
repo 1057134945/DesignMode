@@ -5,5 +5,5 @@ package DesignMode.AdapterMode;
  */
 public interface Target {
 
-    void request();
+    void request(String json);
 }
